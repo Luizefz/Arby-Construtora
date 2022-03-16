@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: none;
+    width: 100%;
+    height: 15vh;
+    padding: 0 3%;
+    position: fixed;
+    backdrop-filter: blur(0.8px);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vh;
+    white-space: nowrap;
+}
+
+.nav-links {
+    margin-bottom: 0px;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecalho-logo {
+    width: auto;
+    height: 10vh;
+    pointer-events: none;
+}
+
+.cabecalho-line {
+    height: 57px;
+    width: 3px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+
+.button {
+    background-color: #0A0A0A;
+    border: none;
+    border-radius: 30px;
+    color: #E0DFE0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    white-space: nowrap;
+}
+
+#remove {
+    text-decoration: none;
+    color: #0A0A0A;
+}
+
+body {
+    height: auto;
+}
+
+.principal-text {
+    color: #0A0A0A;
+    font-weight: bold;
+    padding: 0 3%;
+}
+
+.secundario-text {
+    width: 55%;
+    font-size: 24px;
+    color: #0A0A0A;
+    font-weight: 600;
+    padding: 2% 3%;
+    padding-bottom: 0px;
+    word-break: normal;
+}
+
+#secHome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-ret {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 0px;
+    top: -3px;
+    z-index: -1;
+    background-color: #5F5F5F;
+}
+
+.home-Image {
+    position: absolute;
+    width: 90vh;
+    height: 80%;
+    bottom: 3px;
+    right: 0px;
+    z-index: -1;
+}
+
+.home-text {
+    color: #0A0A0A;
+    font-weight: bold;
+    padding: 0 3%;
+}
+
+.home-Scroll {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 23%;
+    bottom: 10%;
+    border-radius: 50px;
+
+}
+
+#secQuemSomos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.quemsomos-ret {
+    position: absolute;
+    max-width: 50%;
+    z-index: -2;
+    right: 0px;
+    overflow: hidden;
+}
+
+#secProjetos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
