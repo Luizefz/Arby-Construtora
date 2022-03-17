@@ -22,7 +22,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    margin-left: 20vh;
+    margin-left: 3%;
     white-space: nowrap;
 }
 
@@ -39,7 +39,7 @@ li, a {
 
 .cabecalho-logo {
     width: auto;
-    height: 10vh;
+    height: 78px;
     pointer-events: none;
 }
 
@@ -152,6 +152,45 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.carosel {
+    margin: 1% 0 3% 0;
+}
+
+.carosel-text {
+    color: #E0DFE0;
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease 0s;
+}
+
+.carosel-images {
+    justify-self: center;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 0px;
+    transition: 0.5s ease 0s;
+}
+
+.carosel-images:hover {
+    transform: scale(1.007);
+    box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.ret-img {
+    position: absolute;
+    max-width: 40%;
+    right: 20px;
+    top: 255%;
+    background: #5F5F5F;
+    transform: rotate(37.09deg);
+
+    z-index: -2;
+    overflow: hidden;
 }

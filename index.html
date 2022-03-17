@@ -10,6 +10,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="./assets/Logo-Icon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./splide-3.6.12/dist/css/splide.min.css">
+
+    <script type="text/javascript" src="splide-3.6.12/dist/js/splide.min.js"></script>
+
     <title>Arby | Construtora e Incorporadora</title>
 </head>
 
@@ -43,13 +48,17 @@
 <body style="background-color: #E0DFE0;">
 
     <section id="secHome">
+
         <div class="home-ret"></div>
         <img src="./assets/Residencial-Green-Coast-NB.png" class="home-Image">
         <h1 class="home-text">Compromisso com <br>a sua qualidade de vida.</h1>
         <a href="#secQuemSomos"><img src="./assets/scroll-down.gif" class="home-Scroll"></a>
+
     </section>
 
+
     <section id="secQuemSomos">
+
         <h1 class="principal-text">Quem somos?</h1>
         <p class="secundario-text">A ARBY Construtora e Incorporadora está a mais
             de 2 anos no mercado criando e realizando os
@@ -62,14 +71,79 @@
 
     </section>
 
+
     <section id="secProjetos">
+
         <h1 class="principal-text">Conheça alguns dos<br>
             nossos projetos.</h1>
-        <p class="secundario-text">Estes são alguns dos projetos que<br>
-            levam o nosso nome!</p>
-        <h1>Carrosel</h1>
-    </section>
 
+        <p class="secundario-text w-100">Estes são alguns dos projetos que
+            levam o nosso nome!</p>
+
+        <div class="splide carosel">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" style="padding: 1em 1em;">
+
+                        <a href="#secHome" style="text-decoration: none">
+                            <div class="carosel-images d-flex align-items-center"
+                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Green-Coast.png); background-size: cover;">
+
+                                <h1 class="carosel-text">
+                                    Residencial Green Coast
+                                </h1>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="splide__slide" style="padding: 1em 1em;">
+                        <a href="#secHome" style="text-decoration: none">
+                            <div class="carosel-images d-flex align-items-center"
+                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover;">
+
+                                <h1 class="carosel-text">
+                                    Residencial Chicago
+                                </h1>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="splide__slide" style="padding: 1em 1em;">
+                        <a href="#secHome" style="text-decoration: none">
+                            <div class="carosel-images d-flex align-items-center"
+                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover;">
+
+                                <h1 class="carosel-text">
+                                    Sobrado Lá
+                                </h1>
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="projeto-ret">
+            <img src="assets/Rectangle 3.png" class="ret-img">
+        </div> -->
+    </section>
 </body>
+
+<script>
+    new Splide('.splide', {
+        // type: 'slider',
+        perPage: 3,
+        breakpoints: {
+            990: {
+                perPage: 2,
+            },
+            619: {
+                perPage: 1,
+            },
+        },
+    }).mount();
+</script>
 
 </html>
