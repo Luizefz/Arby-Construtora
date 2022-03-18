@@ -18,11 +18,12 @@
     <title>Arby | Construtora e Incorporadora</title>
 </head>
 
-<header>
+<header id="cabecalho">
+
 
     <a href="#secHome"><img src="./assets/Logo.png" class="cabecalho-logo" /></a>
 
-    <nav>
+    <nav id="navbar">
 
         <ul class="nav-links">
             <li><a id="remove" href="#secHome">Home</a></li>
@@ -33,17 +34,16 @@
 
         <ul class="nav-links">
             <li><a id="remove" href="#secProjetos">Projetos</a></li>
-            <li><a id="remove" href="">Nossos clientes</a></li>
+            <li><a id="remove" href="#secCliente">Nossos clientes</a></li>
         </ul>
 
     </nav>
 
-    <a id="remove" style="margin-left: auto" href="">
+    <a id="remove" style="margin-left: auto" href="#secFaleconosco">
         <h1 class="button">Fale conosco!</h1>
     </a>
 
 </header>
-
 
 <body style="background-color: #E0DFE0;">
 
@@ -58,15 +58,16 @@
 
 
     <section id="secQuemSomos">
-
-        <h1 class="principal-text">Quem somos?</h1>
-        <p class="secundario-text">A ARBY Construtora e Incorporadora está a mais
-            de 2 anos no mercado criando e realizando os
-            mais diversos sonhos no âmbito da
-            construção civil.</p>
-        <p class="secundario-text">Idealizamos, construímos e alugamos incríveis
-            projetos imobiliários, atendendo todas as
-            suas nescessidades e as da sua família.</p>
+        <ul id="text-with">
+            <h1 class="principal-text">Quem somos?</h1>
+            <p class="secundario-text">A ARBY Construtora e Incorporadora está a mais
+                de 2 anos no mercado criando e realizando os
+                mais diversos sonhos no âmbito da
+                construção civil.</p>
+            <p class="secundario-text">Idealizamos, construímos e alugamos incríveis
+                projetos imobiliários, atendendo todas as
+                suas nescessidades e as da sua família.</p>
+        </ul>
         <img src="./assets/quemsomos-ret.png" class="quemsomos-ret">
 
     </section>
@@ -74,20 +75,23 @@
 
     <section id="secProjetos">
 
-        <h1 class="principal-text">Conheça alguns dos<br>
-            nossos projetos.</h1>
+        <ul id="text-with">
 
-        <p class="secundario-text w-100">Estes são alguns dos projetos que
-            levam o nosso nome!</p>
+            <h1 class="principal-text">Conheça alguns dos<br>
+                nossos projetos.</h1>
 
+            <p class="secundario-text w-100">Estes são alguns dos projetos que
+                levam o nosso nome!</p>
+
+        </ul>
         <div class="splide carosel">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide" style="padding: 1em 1em;">
 
-                        <a href="#secHome" style="text-decoration: none">
+                        <a href="greencost.html" target="_blank" style="text-decoration: none">
                             <div class="carosel-images d-flex align-items-center"
-                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Green-Coast.png); background-size: cover;">
+                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Green-Coast.png); background-size: cover; background-position: center bottom;">
 
                                 <h1 class="carosel-text">
                                     Residencial Green Coast
@@ -100,7 +104,7 @@
                     <li class="splide__slide" style="padding: 1em 1em;">
                         <a href="#secHome" style="text-decoration: none">
                             <div class="carosel-images d-flex align-items-center"
-                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover;">
+                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover; background-position: center bottom;">
 
                                 <h1 class="carosel-text">
                                     Residencial Chicago
@@ -109,32 +113,91 @@
                             </div>
                         </a>
                     </li>
-
-                    <li class="splide__slide" style="padding: 1em 1em;">
-                        <a href="#secHome" style="text-decoration: none">
-                            <div class="carosel-images d-flex align-items-center"
-                                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover;">
-
-                                <h1 class="carosel-text">
-                                    Sobrado Lá
-                                </h1>
-
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
-        <!-- <div class="projeto-ret">
-            <img src="assets/Rectangle 3.png" class="ret-img">
-        </div> -->
+    </section>
+
+    <section id="secCliente">
+
+        <ul id="text-with">
+            <h1 class="principal-text">Quem nos escolhe, não<br>se decepciona!</h1>
+
+            <p class="secundario-text">Nós analizamos, construímos e entregamos
+                o melhor imóvel para você e toda a sua
+                família.</p>
+
+            <p class="secundario-text">Tudo isso sem dor de cabeça, ou complicações,
+                além de ter uma altíssima qualidade e segurança.</p>
+        </ul>
+
+        <div class="cliente-comentario">
+
+            <img class="cliente-imagem" src="assets/Comentarios.png">
+
+        </div>
+
+    </section>
+
+    <section id="secFaleconosco">
+
+        <ul id="text-with">
+            <h1 class="principal-text">Construa ou alugue seu imóvel<br>
+                dos sonhos conosco!</h1>
+
+            <p class="secundario-text">Envie-nos uma mensagem.</p>
+
+            <form class="form" method="POST" action="email.php">
+                <input class="field" name="name" placeholder="Nome">
+                <input class="field" name="email" placeholder="Email">
+                <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
+                <input class="button" style="width: 200px; align-self: center;" type="submit" value="Enviar">
+            </form>
+        </ul>
+
+        <img src="./assets/Residencia-Chicago-NB.png" class="fale-conosco-image">
     </section>
 </body>
+
+<footer>
+    <div class="footer">
+        <div>
+            <img src="./assets/Logo-White.png" class="footer-image">
+            <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Arby Construtora e
+                Incorporadora LTDA</p>
+        </div>
+
+        <div class="footer-locus">
+            <img src="./assets/map.svg" class="footer-icon">
+            <div>
+                <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Rua Dom Luiz,
+                    235<br>
+                    Vila Real<br>
+                    Balneário Camboriú SC<br>
+                    88337-100</p>
+            </div>
+        </div>
+
+        <div class="footer-locus">
+            <img src="./assets/phone.svg" class="footer-icon">
+            <div>
+
+                <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Telefone para
+                    contato<br>
+                    <a href="tel:+55-47-99662-2236" id="remove" style="color: #E0DFE0; font-size: 18px">(47) 9
+                        9662-2236</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 <script>
     new Splide('.splide', {
         // type: 'slider',
-        perPage: 3,
+        perPage: 2,
         breakpoints: {
             990: {
                 perPage: 2,
@@ -144,6 +207,19 @@
             },
         },
     }).mount();
+</script>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("cabecalho").style.top = "0";
+        } else {
+            document.getElementById("cabecalho").style.top = "-120px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
 </script>
 
 </html>

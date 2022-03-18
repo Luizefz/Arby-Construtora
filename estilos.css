@@ -6,17 +6,18 @@
     scroll-behavior: smooth;
 }
 
-header {
+#cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: none;
     width: 100%;
-    height: 15vh;
+    height: 120px;
     padding: 0 3%;
     position: fixed;
-    backdrop-filter: blur(0.8px);
+    background: rgba(177, 177, 177, 1);
+    transition: top 0.3s;
+    z-index: 3;
 }
 
 nav {
@@ -70,14 +71,18 @@ body {
     height: auto;
 }
 
+#text-with {
+    width: 55%;
+}
+
 .principal-text {
     color: #0A0A0A;
     font-weight: bold;
     padding: 0 3%;
+    word-break: normal;
 }
 
 .secundario-text {
-    width: 55%;
     font-size: 24px;
     color: #0A0A0A;
     font-weight: 600;
@@ -127,7 +132,7 @@ body {
     margin-left: 23%;
     bottom: 10%;
     border-radius: 50px;
-
+    z-index: 0;
 }
 
 #secQuemSomos {
@@ -152,7 +157,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .carosel {
@@ -190,7 +195,102 @@ body {
     top: 255%;
     background: #5F5F5F;
     transform: rotate(37.09deg);
-
     z-index: -2;
     overflow: hidden;
 }
+
+#secCliente {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cliente-imagem {
+    width: auto;
+    height: 400px;
+}
+
+.cliente-comentario {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#secFaleconosco {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fale-conosco-image {
+    position: block;
+    width: 90vh;
+    height: 80%;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.contato {
+    width: 100%;
+    max-width: 500px;
+}
+
+.formu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form {
+    width: 80%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif 16px;
+}
+
+.textearea {
+    height: 150px;
+
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0A0A0A;
+    padding: 5% 0;
+}
+
+.footer-icon {
+    width: 36px;
+    margin: 10px 5px;
+}
+
+.footer-image {
+    width: auto;
+    height: 80px;
+}
+
+.footer-locus {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
