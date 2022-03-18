@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="./splide-3.6.12/dist/css/splide.min.css">
 
     <script type="text/javascript" src="splide-3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Arby | Construtora e Incorporadora</title>
 </head>
 
-<header id="cabecalho">
+<header id="cabecalho" class="header">
 
 
     <a href="#secHome"><img src="./assets/Logo.png" class="cabecalho-logo" /></a>
@@ -47,7 +48,8 @@
 
 <body style="background-color: #E0DFE0;">
 
-    <a href="https://api.whatsapp.com/send?phone=5547996622236&text=Ol%C3%A1!%20%F0%9F%91%8B"><img src="./assets/whatsapp-logo.png" class="whats-chat"></a>
+    <a href="https://api.whatsapp.com/send?phone=5547996622236&text=Ol%C3%A1!%20%F0%9F%91%8B"><img
+            src="./assets/whatsapp-logo.png" class="whats-chat"></a>
 
     <section id="secHome">
 
@@ -218,10 +220,21 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("cabecalho").style.top = "0";
         } else {
-            document.getElementById("cabecalho").style.top = "-120px";
+            document.getElementById("cabecalho").style.top = "-200px";
         }
         prevScrollpos = currentScrollPos;
     }
+
+    $(function () {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 300) {
+                $(".header").addClass("fadeIn");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header").removeClass("fadeIn");
+            }
+        });
+    });
 </script>
 
 </html>
