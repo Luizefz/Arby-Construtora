@@ -71,6 +71,22 @@ body {
     height: auto;
 }
 
+.whats-chat {
+    position: fixed;
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+    right: 1%;
+    bottom: 3%;
+    z-index: 3;
+    transition: 0.3s ease 0s;
+}
+
+.whats-chat:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 4px 30px rgba(255, 255, 255, 0.4);
+}
+
 #text-with {
     width: 55%;
 }
@@ -293,4 +309,3 @@ body {
     flex-direction: row;
     align-items: flex-start;
 }
-
