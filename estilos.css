@@ -64,6 +64,12 @@ li, a {
     font-weight: bold;
     padding: 10px 30px;
     white-space: nowrap;
+    transition: 0.5s ease 0s;
+}
+
+.button:hover {
+    /* transform: scale(1.001); */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #remove {
@@ -72,7 +78,8 @@ li, a {
 }
 
 body {
-    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .whats-chat {
@@ -88,7 +95,7 @@ body {
 
 .whats-chat:hover {
     transform: scale(1.1);
-    box-shadow: 8px 4px 30px rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 30px rgb(10, 10, 10, 0.4);
 }
 
 #text-with {
@@ -104,6 +111,15 @@ body {
 
 .secundario-text {
     font-size: 24px;
+    color: #0A0A0A;
+    font-weight: 600;
+    padding: 2% 3%;
+    padding-bottom: 0px;
+    word-break: normal;
+}
+
+.details-text {
+    font-size: 23px;
     color: #0A0A0A;
     font-weight: 600;
     padding: 2% 3%;
@@ -152,7 +168,13 @@ body {
     margin-left: 23%;
     bottom: 10%;
     border-radius: 50px;
+    transition: 0.5s ease 0s;
     z-index: 0;
+}
+
+.home-Scroll:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 #secQuemSomos {
@@ -177,7 +199,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .carosel {
@@ -206,6 +228,18 @@ body {
 .carosel-images:hover {
     transform: scale(1.007);
     box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.details-images {
+    justify-self: center;
+    width: 100%;
+    max-width: 650px;
+    height: 450px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 3%;
+    align-self: center;
+    transition: 0.5s ease 0s;
 }
 
 .ret-img {
@@ -248,6 +282,33 @@ body {
     align-items: center;
 }
 
+#secDetailsScreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-left {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.details-right {
+    flex-direction: row;
+    display: flex;
+    margin: 100px 0;
+}
+
+.header-details-image {
+    display: block;
+    margin: 180px 0 0 0;
+    align-self: center;
+    width: 75%;
+    height: 400px;
+    background-size: cover;
+}
+
 .fale-conosco-image {
     position: relative;
     width: auto;
@@ -287,7 +348,9 @@ body {
 
 }
 
-
+footer {
+    background-color: #0A0A0A;
+}
 
 .footer {
     display: flex;
@@ -295,6 +358,7 @@ body {
     justify-content: space-evenly;
     background-color: #0A0A0A;
     padding: 5% 3%;
+
 }
 
 .footer-icon {
@@ -311,4 +375,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.text-test {
+    display: flex;
+    text-align: center;
 }
