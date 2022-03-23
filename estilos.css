@@ -197,6 +197,7 @@ body {
     top: -3px;
     z-index: -1;
     background-color: #5F5F5F;
+    border-bottom-left-radius: 50px;
 }
 
 .home-Image {
@@ -265,6 +266,15 @@ body {
 
 .carosel-padding {
     padding: 2em 2em;
+}
+
+.carosel02 {
+    width: 45%;
+    margin: 1% 0 3% 0;
+}
+
+.carosel-padding02 {
+    padding: 1em;
 }
 
 .carosel-text {
@@ -847,7 +857,7 @@ footer {
     .home-Image {
         position: absolute;
         min-width: 400px;
-        width: 60%;
+        width: 100%;
         min-height: 300px;
         height: auto;
         bottom: 3px;
@@ -912,6 +922,18 @@ footer {
     .carosel-images:hover {
         transform: scale(1.007);
         box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .carosel02 {
+        width: 100%;
+        margin: 1% 0 3% 0;
+        border-radius: 50PX;
+    }
+
+    .carosel-images02 {
+        /* width: 250px;
+        height: 200px;
+        -left: 100px; */
     }
 
     .ret-img {
