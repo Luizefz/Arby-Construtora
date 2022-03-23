@@ -45,9 +45,9 @@
     <a id="remove" style="margin-left: auto" class="hamburger-show">
         <span onclick="openNav()"><img src="/assets/burger-menu.svg"></span>
     </a>
-    
+
     <!-- Use any element to open the sidenav -->
-        
+
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeXNav()">&times;</a>
@@ -56,7 +56,7 @@
         <a href="#secProjetos" onclick="closeNav()">Projetos</a>
         <a href="#secCliente" onclick="closeNav()">Nossos clientes</a>
         <a href="#secFaleconosco" onclick="closeNav()">Fale conoso!</a>
-        
+
     </div>
 
 </header>
@@ -70,10 +70,10 @@
 
         <div class="home-ret"></div>
         <img src="./assets/Residencial-Green2.png" class="home-Image">
-        <h1 class="home-text">Compromisso com <br>a sua qualidade de vida.</h1>
+        <h1 class="home-text hidden">Compromisso com <br>a sua qualidade de vida.</h1>
         <a href="#secQuemSomos"><img src="./assets/scroll-down.gif" class="home-Scroll"></a>
 
-        
+
 
     </section>
 
@@ -271,8 +271,14 @@
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        setTimeout(function() {document.getElementById("cabecalho").style.top = "-200px"}, 1.0 * 1000) 
+        setTimeout(function () { document.getElementById("cabecalho").style.top = "-200px" }, 1.0 * 1000)
     }
+
+    $(window).on("load", function () {
+
+    $('.home-text').fadeIn(900), function(){
+    }
+});
 </script>
 
 </html>

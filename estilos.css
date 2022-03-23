@@ -53,6 +53,11 @@
     box-shadow: 8px 4px 30px rgb(10, 10, 10, 0.09);
 }
 
+.fadeIn02 {
+    opacity: 1;
+    text-shadow: 8px 4px 30px rgb(95, 95, 95, 0.5);
+}
+
 #cabecalho {
     display: flex;
     flex-direction: row;
@@ -207,6 +212,8 @@ body {
     color: #0A0A0A;
     font-weight: bold;
     padding: 0 3%;
+    transition: 0.5s;
+    display: none;
 }
 
 .home-Scroll {
