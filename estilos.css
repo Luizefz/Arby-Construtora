@@ -6,6 +6,48 @@
     scroll-behavior: smooth;
 }
 
+.hamburger-show {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0A0A0A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 4;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
 .fadeIn {
     background-color: #E0DFE0;
     box-shadow: 8px 4px 30px rgb(10, 10, 10, 0.09);
@@ -521,7 +563,7 @@ footer {
     .home-Image {
         position: absolute;
         min-width: 400px;
-        width: 120%;
+        width: 80%;
         min-height: 300px;
         height: auto;
         bottom: 3px;
@@ -704,9 +746,23 @@ footer {
 
 @media screen and (max-width: 619px) {
 
+    .buttom-hide {
+        display: none;
+    }
+
+    .hamburger-show {
+        display: block;
+        transition: 0.5s ease 0s;
+    }
+
+    .hamburger-show:hover {
+        transform: scale(1.09);
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.8));
+    }
+
     .cabecalho-logo {
         width: auto;
-        height: 60px;
+        height: 70px;
         pointer-events: none;
     }
 
@@ -784,7 +840,7 @@ footer {
     .home-Image {
         position: absolute;
         min-width: 400px;
-        width: 120%;
+        width: 60%;
         min-height: 300px;
         height: auto;
         bottom: 3px;
@@ -816,7 +872,7 @@ footer {
 
     #secQuemSomos {
         width: 100%;
-        min-height: 100vh;
+        min-height: 90vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -835,7 +891,7 @@ footer {
 
     #secProjetos {
         width: 100%;
-        min-height: auto;
+        min-height: 90vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -864,7 +920,7 @@ footer {
 
     #secCliente {
         width: 100%;
-        min-height: 100vh;
+        min-height: 80vh;
         height: auto;
         display: flex;
         flex-direction: column;
