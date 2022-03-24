@@ -213,7 +213,7 @@ body {
     color: #0A0A0A;
     font-weight: bold;
     padding: 0 3%;
-    transition: 0.5s;
+    text-shadow: 2px 2px 25px rgb(224, 223, 224, 0.8);
     display: none;
 }
 

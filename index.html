@@ -291,7 +291,7 @@
         pauseOnFocus: false,
         pagination: false,
         perPage: 1,
-        height   : 'auto',
+        height: 'auto',
         autoWidth: true,
         autoScroll: {
             speed: 2,
@@ -337,9 +337,15 @@
 
     $(window).on("load", function () {
 
-        $('.home-text').fadeIn(1000), function () {
-        }
+        // $('.home-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        // $('.home-text').animate({ height: 0, opacity: 0 }, 'slow');
+        $('.home-text').fadeIn(1000)
+        $('.whats-chat').fadeIn(1000)
     });
+
+    $(window).location.href='#secQuemSomos', function () {
+        $('.principal-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+    }
 </script>
 
 </html>
