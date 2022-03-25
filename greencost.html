@@ -22,7 +22,7 @@
 <header id="cabecalho" class="header">
 
 
-    <a href="http://127.0.0.1:5500/#secHome"><img src="./assets/Logo.png" class="cabecalho-logo" /></a>
+    <a href="index.html"><img src="./assets/Logo.png" class="cabecalho-logo" /></a>
 
     <!-- <nav id="navbar">
 
@@ -78,7 +78,8 @@
             <img src="./assets/Residencial-Green-Coast.png" class="details-images">
 
             <p class="details-text">O Residencial Green Coast conta com uma ampla estrutura moderna e aconchegante,
-                contando com 8 apartamentos planejados para um melhor conforto e segurança para você e sua família com direito a 1 vaga de garagem.
+                contando com 8 apartamentos planejados para um melhor conforto e segurança para você e sua família com
+                direito a 1 vaga de garagem.
 
             </p>
 
@@ -87,7 +88,8 @@
         <div class="details-right">
             <img src="./assets/Interior-Green-Coast.png" class="details-images">
 
-            <p class="details-text">A sua parte interna conta com um planejamento para um melhor reaproveitamento de luz natural e fluxo de ar,
+            <p class="details-text">A sua parte interna conta com um planejamento para um melhor reaproveitamento de luz
+                natural e fluxo de ar,
                 dando um melhor conforto, contando com 2 suítes, estar e jantar integrados, sacada com churrasqueira,
                 lavabo social, detalhes em gesso, portas brancas, pisos em porcelanato, fino acabamento,
                 estantes para ar-condicionado split e estantes para tv a cabo, telefone e dados.
@@ -232,7 +234,7 @@
 
 </footer>
 
-<style>
+<!-- <style>
     .thumbnails {
         display: flex;
         margin: 1rem auto 0;
@@ -253,63 +255,63 @@
         width: 100%;
         height: auto;
     }
-</style>
+</style> -->
 
 <script>
 
-    var splide = new Splide('#main-slider', {
-        pagination: false,
-        // autoWidth: true,
-        perPage: 3,
-        trimSpace: false,
-        breakpoints: {
-            1180: {
-                perPage: 2,
-                focus: 'center',
-                trimSpace: false,
-            },
-            730: {
-                perPage: 2,
-                focus: 'center',
-                trimSpace: false,
-                autoWidth: true,
+    // var splide = new Splide('#main-slider', {
+    //     pagination: false,
+    //     // autoWidth: true,
+    //     perPage: 3,
+    //     trimSpace: false,
+    //     breakpoints: {
+    //         1180: {
+    //             perPage: 2,
+    //             focus: 'center',
+    //             trimSpace: false,
+    //         },
+    //         730: {
+    //             perPage: 2,
+    //             focus: 'center',
+    //             trimSpace: false,
+    //             autoWidth: true,
 
-            },
-            490: {
-                perPage: 1,
-                focus: 'center',
-                // padding: { left: 20, right: 50 }
-            },
-        },
-    });
+    //         },
+    //         490: {
+    //             perPage: 1,
+    //             focus: 'center',
+    //             // padding: { left: 20, right: 50 }
+    //         },
+    //     },
+    // });
 
-    var thumbnails = document.getElementsByClassName('thumbnail');
-    var current;
+    // var thumbnails = document.getElementsByClassName('thumbnail');
+    // var current;
 
-    for (var i = 0; i < thumbnails.length; i++) {
-        initThumbnail(thumbnails[i], i);
-    }
+    // for (var i = 0; i < thumbnails.length; i++) {
+    //     initThumbnail(thumbnails[i], i);
+    // }
 
-    function initThumbnail(thumbnail, index) {
-        thumbnail.addEventListener('click', function () {
-            splide.go(index);
-        });
-    }
+    // function initThumbnail(thumbnail, index) {
+    //     thumbnail.addEventListener('click', function () {
+    //         splide.go(index);
+    //     });
+    // }
 
-    splide.on('mounted move', function () {
-        var thumbnail = thumbnails[splide.index];
+    // splide.on('mounted move', function () {
+    //     var thumbnail = thumbnails[splide.index];
 
-        if (thumbnail) {
-            if (current) {
-                current.classList.remove('is-active');
-            }
+    //     if (thumbnail) {
+    //         if (current) {
+    //             current.classList.remove('is-active');
+    //         }
 
-            thumbnail.classList.add('is-active');
-            current = thumbnail;
-        }
-    });
+    //         thumbnail.classList.add('is-active');
+    //         current = thumbnail;
+    //     }
+    // });
 
-    splide.mount();
+    // splide.mount();
 
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {

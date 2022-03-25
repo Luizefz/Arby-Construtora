@@ -180,6 +180,11 @@ body {
     font-size: 60px;
 }
 
+.details-text-02 {
+    margin: 20vh 0 5% 0;
+    font-size: 60px;
+}
+
 #secHome {
     width: 100%;
     min-height: 100vh;
@@ -370,6 +375,11 @@ body {
 .details-left {
     flex-direction: row-reverse;
     display: flex;
+}
+
+.details-left-02 {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .details-right {
@@ -711,7 +721,11 @@ footer {
     .details-left {
         display: flex;
         flex-direction: column;
+    }
 
+    .details-left-02 {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .details-right {
@@ -845,6 +859,10 @@ footer {
 
     .details-header-text {
         margin: 20vh 0 5% 0;
+        font-size: 45px;
+    }
+    .details-text-02 {
+        margin: 10px 0 5% 0;
         font-size: 45px;
     }
 
@@ -1002,7 +1020,11 @@ footer {
     .details-left {
         display: flex;
         flex-direction: column;
+    }
 
+    .details-left-02 {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .details-right {
