@@ -46,9 +46,9 @@
     <a id="remove" style="margin-left: auto" class="hamburger-show">
         <span onclick="openNav()"><img src="./assets/burger-menu.svg"></span>
     </a>
-    
+
     <!-- Use any element to open the sidenav -->
-        
+
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeXNav()">&times;</a>
@@ -57,7 +57,7 @@
         <a href="index.html/#secProjetos" onclick="closeNav()">Projetos</a>
         <a href="index.html/#secCliente" onclick="closeNav()">Nossos clientes</a>
         <a href="index.html/#secFaleconosco" onclick="closeNav()">Fale conoso!</a>
-        
+
     </div>
 
 </header>
@@ -101,7 +101,7 @@
             <img src="./assets/Interior-Chicago.png" class="details-images">
 
 
-            <h3 class="details-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+            <p class="details-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                 in a
                 piece
                 of classical
@@ -117,13 +117,13 @@
                 during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
                 in
                 section 1.10.32.
-            </h3>
+            </p>
         </div>
 
         <div class="details-left">
             <img src="./assets/Planta-Green-Coast.jpg" class="details-images">
 
-            <h3 class="details-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+            <p class="details-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                 in a
                 piece
                 of classical
@@ -139,16 +139,56 @@
                 during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
                 in
                 section 1.10.32.
-            </h3>
+            </p>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <div id="main-slider" class="splide carosel">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide carosel-images03">
+                    <img class="carosel-padding02" src="./assets/Green-Coast-pic01.png" />
+                </li>
+                <li class="splide__slide carosel-images03">
+                    <img class="carosel-padding02" src="./assets/Green-Coast-pic02.png" />
+                </li>
+                <li class="splide__slide carosel-images03">
+                    <img class="carosel-padding02" src="./assets/Green-Coast-pic03.png" />
+                </li>
+                <li class="splide__slide carosel-images03">
+                    <img class="carosel-padding02" src="./assets/Green-Coast-pic04.png" />
+                </li>
+                <li class="splide__slide carosel-images03">
+                    <img class="carosel-padding02" src="./assets/Green-Coast-pic05.png" />
+                </li>
+            </ul>
         </div>
     </div>
 
-    <div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15792.52510567092!2d-35.0385235!3d-8.2897319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c532b78cdb274b!2sINSS%20do%20Cabo!5e0!3m2!1spt-BR!2sbr!4v1647742467139!5m2!1spt-BR!2sbr"
-            width="90%" height="450"
-            style="border-radius: 30px; position: relative; left: 5%; right: 5%; margin: 100px 0;" allowfullscreen=""
-            loading="lazy"></iframe>
+    <ul id="thumbnails" class="thumbnails">
+        <li class="thumbnail">
+            <img src="./assets/Green-Coast-pic01.png" />
+        </li>
+        <li class="thumbnail">
+            <img src="./assets/Green-Coast-pic02.png" />
+        </li>
+        <li class="thumbnail">
+            <img src="./assets/Green-Coast-pic03.png" />
+        </li>
+        <li class="thumbnail">
+            <img src="./assets/Green-Coast-pic04.png" />
+        </li>
+        <li class="thumbnail">
+            <img src="./assets/Green-Coast-pic05.png" />
+        </li>
+    </ul>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5934.533633089899!2d-48.6393089009299!3d-27.021785828653176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b680ea8b222b%3A0x3d8cc11e77366375!2sS%C3%A3o%20Francisco%20de%20Assis%2C%20Cambori%C3%BA%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1648164425280!5m2!1spt-BR!2sbr"
+        width="90%" height="450" style="border-radius: 30px; position: relative; left: 5%; right: 5%; margin: 100px 0;"
+        allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <div id="secFaleconosco">
@@ -218,7 +258,84 @@
 
 </footer>
 
+<style>
+    .thumbnails {
+        display: flex;
+        margin: 1rem auto 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .thumbnail {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        list-style: none;
+        margin: 0 0.2rem;
+        cursor: pointer;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
 <script>
+    var splide = new Splide('#main-slider', {
+        pagination: false,
+        // autoWidth: true,
+        perPage: 3,
+        trimSpace: false,
+        breakpoints: {
+            1180: {
+                perPage: 2,
+                focus: 'center',
+                trimSpace: false,
+            },
+            730: {
+                perPage: 2,
+                focus: 'center',
+                trimSpace: false,
+                autoWidth: true,
+
+            },
+            490: {
+                perPage: 1,
+                focus: 'center',
+                // padding: { left: 20, right: 50 }
+            },
+        },
+    });
+
+    var thumbnails = document.getElementsByClassName('thumbnail');
+    var current;
+
+    for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+    }
+
+    function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener('click', function () {
+            splide.go(index);
+        });
+    }
+
+    splide.on('mounted move', function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+            if (current) {
+                current.classList.remove('is-active');
+            }
+
+            thumbnail.classList.add('is-active');
+            current = thumbnail;
+        }
+    });
+
+    splide.mount();
+
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
