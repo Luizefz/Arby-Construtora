@@ -6,9 +6,56 @@
     scroll-behavior: smooth;
 }
 
+.hamburger-show {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0A0A0A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 4;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
 .fadeIn {
     background-color: #E0DFE0;
     box-shadow: 8px 4px 30px rgb(10, 10, 10, 0.09);
+}
+
+.fadeIn02 {
+    opacity: 1;
+    text-shadow: 8px 4px 30px rgb(95, 95, 95, 0.5);
 }
 
 #cabecalho {
@@ -119,15 +166,21 @@ body {
 }
 
 .details-text {
-    font-size: 23px;
+    font-size: 28px;
     color: #0A0A0A;
     font-weight: 600;
     padding: 2% 3%;
     padding-bottom: 0px;
     word-break: normal;
+    /* align-self: center; */
 }
 
 .details-header-text {
+    margin: 20vh 0 5% 0;
+    font-size: 60px;
+}
+
+.details-text-02 {
     margin: 20vh 0 5% 0;
     font-size: 60px;
 }
@@ -150,6 +203,7 @@ body {
     top: -3px;
     z-index: -1;
     background-color: #5F5F5F;
+    border-bottom-left-radius: 50px;
 }
 
 .home-Image {
@@ -165,6 +219,8 @@ body {
     color: #0A0A0A;
     font-weight: bold;
     padding: 0 3%;
+    text-shadow: 2px 2px 25px rgb(224, 223, 224, 0.8);
+    display: none;
 }
 
 .home-Scroll {
@@ -218,6 +274,15 @@ body {
     padding: 2em 2em;
 }
 
+.carosel02 {
+    width: 45%;
+    margin: 1% 0 3% 0;
+}
+
+.carosel-padding02 {
+    padding: 1em;
+}
+
 .carosel-text {
     color: #E0DFE0;
     font-weight: 600;
@@ -240,6 +305,12 @@ body {
 .carosel-images:hover {
     transform: scale(1.007);
     box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.carosel-images03 {
+    justify-self: center;
+    width: 25%;
+    height: 500px;
 }
 
 .details-images {
@@ -304,6 +375,11 @@ body {
 .details-left {
     flex-direction: row-reverse;
     display: flex;
+}
+
+.details-left-02 {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .details-right {
@@ -521,7 +597,7 @@ footer {
     .home-Image {
         position: absolute;
         min-width: 400px;
-        width: 120%;
+        width: 80%;
         min-height: 300px;
         height: auto;
         bottom: 3px;
@@ -587,6 +663,13 @@ footer {
         box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
     }
 
+    .carosel-images03 {
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 510px;
+    }
+
     .ret-img {
         position: absolute;
         max-width: 40%;
@@ -638,7 +721,11 @@ footer {
     .details-left {
         display: flex;
         flex-direction: column;
+    }
 
+    .details-left-02 {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .details-right {
@@ -704,9 +791,23 @@ footer {
 
 @media screen and (max-width: 619px) {
 
+    .buttom-hide {
+        display: none;
+    }
+
+    .hamburger-show {
+        display: block;
+        transition: 0.5s ease 0s;
+    }
+
+    .hamburger-show:hover {
+        transform: scale(1.09);
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.8));
+    }
+
     .cabecalho-logo {
         width: auto;
-        height: 60px;
+        height: 70px;
         pointer-events: none;
     }
 
@@ -739,7 +840,7 @@ footer {
     }
 
     .secundario-text {
-        font-size: 16px;
+        font-size: 18px;
         color: #0A0A0A;
         font-weight: 600;
         padding: 2% 3%;
@@ -758,6 +859,10 @@ footer {
 
     .details-header-text {
         margin: 20vh 0 5% 0;
+        font-size: 45px;
+    }
+    .details-text-02 {
+        margin: 10px 0 5% 0;
         font-size: 45px;
     }
 
@@ -784,7 +889,7 @@ footer {
     .home-Image {
         position: absolute;
         min-width: 400px;
-        width: 120%;
+        width: 100%;
         min-height: 300px;
         height: auto;
         bottom: 3px;
@@ -816,7 +921,7 @@ footer {
 
     #secQuemSomos {
         width: 100%;
-        min-height: 100vh;
+        min-height: 90vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -835,7 +940,7 @@ footer {
 
     #secProjetos {
         width: 100%;
-        min-height: auto;
+        min-height: 90vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -851,6 +956,19 @@ footer {
         box-shadow: 8px 4px 30px rgba(0, 0, 0, 0.4);
     }
 
+    .carosel02 {
+        width: 100%;
+        margin: 1% 0 3% 0;
+        border-radius: 50PX;
+    }
+
+    .carosel-images03 {
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 510px;
+    }
+
     .ret-img {
         position: absolute;
         max-width: 40%;
@@ -864,7 +982,7 @@ footer {
 
     #secCliente {
         width: 100%;
-        min-height: 100vh;
+        min-height: 80vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -902,7 +1020,11 @@ footer {
     .details-left {
         display: flex;
         flex-direction: column;
+    }
 
+    .details-left-02 {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .details-right {

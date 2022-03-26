@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./splide-3.6.12/dist/css/splide.min.css">
 
     <script type="text/javascript" src="splide-3.6.12/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.3.7/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Arby | Construtora e Incorporadora</title>
@@ -39,13 +41,29 @@
 
     </nav>
 
-    <a id="remove" style="margin-left: auto" href="#secFaleconosco">
+    <a id="remove" style="margin-left: auto" class="buttom-hide" href="#secFaleconosco">
         <h1 class="button">Fale conosco!</h1>
     </a>
+    <a id="remove" style="margin-left: auto" class="hamburger-show">
+        <span onclick="openNav()"><img src="./assets/burger-menu.svg"></span>
+    </a>
+
+    <!-- Use any element to open the sidenav -->
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeXNav()">&times;</a>
+        <a href="#secHome" onclick="closeXNav()">Home</a>
+        <a href="#secQuemSomos" onclick="closeNav()">Quem somos?</a>
+        <a href="#secProjetos" onclick="closeNav()">Projetos</a>
+        <a href="#secCliente" onclick="closeNav()">Nossos clientes</a>
+        <a href="#secFaleconosco" onclick="closeNav()">Fale conoso!</a>
+
+    </div>
 
 </header>
 
-<body style="background-color: #E0DFE0;">
+<body style="background-color: #e0dfe0;">
 
     <a href="https://api.whatsapp.com/send?phone=5547996622236&text=Ol%C3%A1!%20%F0%9F%91%8B"><img
             src="./assets/whatsapp-logo.png" class="whats-chat"></a>
@@ -53,9 +71,11 @@
     <section id="secHome">
 
         <div class="home-ret"></div>
-        <img src="./assets/Residencial-Green-Coast-NB.png" class="home-Image">
-        <h1 class="home-text">Compromisso com <br>a sua qualidade de vida.</h1>
+        <img src="./assets/Residencial-Green3.png" class="home-Image">
+        <h1 class="home-text hidden">Compromisso com <br>a sua qualidade de vida.</h1>
         <a href="#secQuemSomos"><img src="./assets/scroll-down.gif" class="home-Scroll"></a>
+
+
 
     </section>
 
@@ -73,7 +93,7 @@
         </ul>
         <img src="./assets/quemsomos-ret.png" class="quemsomos-ret">
 
-        <img src="./assets/Mail-sent.png" class="cliente-imagem">
+        <img src="./assets/Mosaico-Quemsomos.png" class="cliente-imagem">
     </section>
 
 
@@ -136,7 +156,51 @@
         </ul>
 
         <img src="./assets/quemsomos-ret.png" class="quemsomos-ret">
-        <img class="cliente-imagem" src="assets/Comentarios.png">
+        <!-- <img class="cliente-imagem" src="assets/Comentarios.png"> -->
+
+        <div class="splide02 carosel02">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide carosel-padding02">
+
+                            <div class="carosel-images02 d-flex align-items-center">
+
+                                <img class="carosel-images02" src="./assets/Comentarios.png">
+
+                            </div>
+                        
+                    </li>
+
+                    <li class="splide__slide carosel-padding">
+                        
+                            <div class="carosel-images02">
+
+                                <img class="carosel-images02" src="./assets/Comentarios02.png">
+
+                            </div>
+                        
+                    </li>
+                    <!-- <li class="splide__slide carosel-padding">
+                        <a href="chicago.html" target="_blank" style="text-decoration: none">
+                            <div class="d-flex align-items-center">
+
+                                <img src="./assets/Comentario-03.png">
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide carosel-padding">
+                        <a href="chicago.html" target="_blank" style="text-decoration: none; width: 100px;">
+                            <div class="d-flex align-items-center">
+
+                                <img src="./assets/Comentario-04.png">
+
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
 
     </section>
 
@@ -157,13 +221,14 @@
         </ul>
 
         <img src="./assets/Mail-sent.png" class="fale-conosco-image">
+    
     </section>
 </body>
 
 <footer>
     <div class="footer">
         <div class="footer-brand">
-            <img src="./assets/Logo-White.png" class="footer-image">
+            <a href="index.html"><img src="./assets/Logo-White.png" class="footer-image"></a>
             <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Arby Construtora e
                 Incorporadora LTDA</p>
         </div>
@@ -173,7 +238,7 @@
             <div class="footer-locus">
                 <img src="./assets/map.svg" class="footer-icon">
                 <div>
-                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Rua Dom
+                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Rua Dom
                         Luiz,
                         235<br>
                         Vila Real<br>
@@ -186,10 +251,10 @@
                 <img src="./assets/phone.svg" class="footer-icon">
                 <div>
 
-                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Telefone
+                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Telefone
                         para
                         contato<br>
-                        <a href="tel:+55-47-99662-2236" id="remove" style="color: #E0DFE0; font-size: 18px">(47) 9
+                        <a href="tel:+55-47-99662-2236" id="remove" style="color: #c4c4c4; font-size: 18px">(47) 9
                             9662-2236</a>
                     </p>
 
@@ -207,8 +272,9 @@
 
 <script>
     new Splide('.splide', {
-        // type: 'slider',
+        type: 'slide',
         perPage: 2,
+        arrows: false,
         breakpoints: {
             990: {
                 perPage: 2,
@@ -218,6 +284,19 @@
             },
         },
     }).mount();
+
+    new Splide('.splide02', {
+        type: 'loop',
+        drag: 'free',
+        arrows: false,
+        pagination: false,
+        perPage: 1,
+        height: 'auto',
+        autoWidth: true,
+        autoScroll: {
+            speed: 1,
+        },
+    }).mount(window.splide.Extensions);
 </script>
 
 <script>
@@ -242,6 +321,57 @@
             }
         });
     });
-</script>
 
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeXNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        setTimeout(function () { document.getElementById("cabecalho").style.top = "-200px" }, 1.0 * 1000)
+    }
+
+    $(window).on("load", function () {
+
+        // $('.home-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        // $('.home-text').animate({ height: 0, opacity: 0 }, 'slow');
+        $('.home-text').fadeIn(1000)
+    });
+
+    $(window).location.href='#secQuemSomos', function () {
+        $('.principal-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+    }
+</script>
+<?php
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+
+$nome = addslashes($_POST['name']);
+$email = addslashes($_POST['email']);
+$mensagem = addslashes($_POST['mesage']);
+
+$to = "contato@arbyconstrutora.kinghost.net";
+$subject = "Email enviado de site";
+$body = "Nome: ".$nome. "\r\n".
+        "Email: ".$email. "\r\n".
+        "Mensagem: ".$mensagem;
+$header = "From:arbyconstrutora@arbyconstrutora.kinghost.net"."\r\n".
+            "Repley-To:".$email."\e\n".
+            "X=Mailer:PHP/".phpversion();
+
+if (mail($to,$subject,$body,$header)){
+
+    echo("Email enviado com sucesso");
+}
+    else{
+    echo("O email não foi enviado");
+}
+
+}
+
+?>
 </html>
