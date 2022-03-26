@@ -137,6 +137,7 @@ body {
     right: 1%;
     bottom: 3%;
     z-index: 3;
+    opacity: 0;
     transition: 0.3s ease 0s;
 }
 
@@ -213,6 +214,10 @@ body {
     bottom: 3px;
     right: 0px;
     z-index: -1;
+}
+
+.home-Image02 {
+    display: none;
 }
 
 .home-text {
@@ -605,6 +610,10 @@ footer {
         z-index: -1;
     }
 
+    .home-Image02 {
+        display: none;
+    }
+
     .home-text {
         color: #0A0A0A;
         font-weight: bold;
@@ -861,6 +870,7 @@ footer {
         margin: 20vh 0 5% 0;
         font-size: 45px;
     }
+
     .details-text-02 {
         margin: 10px 0 5% 0;
         font-size: 45px;
@@ -872,43 +882,88 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        /* justify-content: center;  */
+        /* align-items: flex-start; */
     }
 
     .home-ret {
-        position: absolute;
-        width: 35%;
-        height: 100%;
-        right: 0px;
-        top: -3px;
-        z-index: -1;
-        background-color: #5F5F5F;
+        display: none;
     }
 
     .home-Image {
+        display: none;
         position: absolute;
         min-width: 400px;
         width: 100%;
         min-height: 300px;
         height: auto;
-        bottom: 3px;
+        bottom: 5vh;
+        right: 0;
         right: 0px;
         z-index: -1;
+
+        border-radius: 0px 0px 0px 6px;
+    }
+
+    .home-Image02 {
+        display: flex;
+        position: absolute;
+        min-width: 291px;
+        width: 60%;
+        min-height: 399px;
+        height: auto;
+        bottom: 10vh;
+        right: 0px;
+        opacity: 0;
+        z-index: -1;
+
+        border-radius: 0px 0px 0px 6px;
     }
 
     .home-text {
+        width: 90%;
+        font-size: 30px;
         color: #0A0A0A;
         font-weight: bold;
+        text-align: center;
+        align-self: center;
+        margin-top: -50%;
         padding: 0 3%;
+    }
+
+    .home-ret02 {
+        position: absolute;
+        width: 424px;
+        height: 210px;
+        left: -180px;
+        top: 40%;
+        opacity: 0;
+        z-index: -2;
+
+        background: linear-gradient(254.73deg, #E9E9E9 39.28%, rgba(233, 233, 233, 0.66) 96.12%);
+        border-radius: 12px;
+        transform: rotate(133.11deg);
+    }
+
+    .home-ret03 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 20%;
+        opacity: 0;
+        z-index: -2;
+
+        background: linear-gradient(180deg, #E9E9E9 0%, rgba(233, 233, 233, 0) 100%);
+        border-radius: 50px;
     }
 
     .home-Scroll {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: auto;
         margin: 0 47%;
-        bottom: 10%;
+        bottom: 3.1%;
         border-radius: 50px;
         transition: 0.5s ease 0s;
         z-index: 0;
@@ -925,7 +980,7 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         align-items: center;
     }
 

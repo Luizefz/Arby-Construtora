@@ -45,7 +45,7 @@
         <h1 class="button">Fale conosco!</h1>
     </a>
     <a id="remove" style="margin-left: auto" class="hamburger-show">
-        <span onclick="openNav()"><img src="./assets/burger-menu.svg"></span>
+        <span onclick="openNav()"><img src="./assets/burger-menu.png"></span>
     </a>
 
     <!-- Use any element to open the sidenav -->
@@ -72,10 +72,11 @@
 
         <div class="home-ret"></div>
         <img src="./assets/Residencial-Green3.png" class="home-Image">
+        <img src="./assets/Residencial-Green3-1.png" class="home-Image02">
         <h1 class="home-text hidden">Compromisso com <br>a sua qualidade de vida.</h1>
+        <div class="home-ret02"></div>
+        <div class="home-ret03"></div>
         <a href="#secQuemSomos"><img src="./assets/scroll-down.gif" class="home-Scroll"></a>
-
-
 
     </section>
 
@@ -163,42 +164,20 @@
                 <ul class="splide__list">
                     <li class="splide__slide carosel-padding02">
 
-                        <a href="greencost.html" target="_blank" style="text-decoration: none">
                             <div class="carosel-images02 d-flex align-items-center">
 
                                 <img class="carosel-images02" src="./assets/Comentarios.png">
 
                             </div>
-                        </a>
                     </li>
 
                     <li class="splide__slide carosel-padding">
-                        <a href="chicago.html" target="_blank" style="text-decoration: none">
                             <div class="carosel-images02">
 
                                 <img class="carosel-images02" src="./assets/Comentarios02.png">
 
                             </div>
-                        </a>
                     </li>
-                    <!-- <li class="splide__slide carosel-padding">
-                        <a href="chicago.html" target="_blank" style="text-decoration: none">
-                            <div class="d-flex align-items-center">
-
-                                <img src="./assets/Comentario-03.png">
-
-                            </div>
-                        </a>
-                    </li>
-                    <li class="splide__slide carosel-padding">
-                        <a href="chicago.html" target="_blank" style="text-decoration: none; width: 100px;">
-                            <div class="d-flex align-items-center">
-
-                                <img src="./assets/Comentario-04.png">
-
-                            </div>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -238,7 +217,7 @@
             <div class="footer-locus">
                 <img src="./assets/map.svg" class="footer-icon">
                 <div>
-                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Rua Dom
+                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Rua Dom
                         Luiz,
                         235<br>
                         Vila Real<br>
@@ -251,10 +230,10 @@
                 <img src="./assets/phone.svg" class="footer-icon">
                 <div>
 
-                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Telefone
+                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Telefone
                         para
                         contato<br>
-                        <a href="tel:+55-47-99662-2236" id="remove" style="color: #c4c4c4; font-size: 18px">(47) 9
+                        <a href="tel:+55-47-99662-2236" id="remove" style="color: #FFFFFF; font-size: 18px">(47) 9
                             9662-2236</a>
                     </p>
 
@@ -293,6 +272,8 @@
         perPage: 1,
         height: 'auto',
         autoWidth: true,
+        pauseOnFocus: false,
+        slideFocus: false,
         autoScroll: {
             speed: 1,
         },
@@ -337,9 +318,11 @@
 
     $(window).on("load", function () {
 
-        // $('.home-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
-        // $('.home-text').animate({ height: 0, opacity: 0 }, 'slow');
-        $('.home-text').fadeIn(1000)
+        $('.home-ret02').animate({ height: '170', opacity: '0.8'}, 1500);
+        $('.home-ret03').animate({ height: '70', width: '70', opacity: '0.8'}, 1000);
+        $('.home-Image02').animate({ opacity: 1 }, 1500);
+        $('.whats-chat').animate({ opacity: 1 }, 2000);
+        $('.home-text').fadeIn(2200)
     });
 
     $(window).location.href='#secQuemSomos', function () {
