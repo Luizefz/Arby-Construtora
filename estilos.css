@@ -228,6 +228,14 @@ body {
     display: none;
 }
 
+.home-ret02 {
+    display: none;
+}
+
+.home-ret03 {
+    display: none;
+}
+
 .home-Scroll {
     position: absolute;
     width: 50px;
@@ -870,6 +878,7 @@ footer {
         margin: 20vh 0 5% 0;
         font-size: 45px;
     }
+
     .details-text-02 {
         margin: 10px 0 5% 0;
         font-size: 45px;
@@ -936,6 +945,7 @@ footer {
     }
 
     .home-ret02 {
+        display: block;
         position: absolute;
         width: 424px;
         height: 210px;
@@ -950,6 +960,7 @@ footer {
     }
 
     .home-ret03 {
+        display: block;
         position: absolute;
         width: 100px;
         height: 100px;
