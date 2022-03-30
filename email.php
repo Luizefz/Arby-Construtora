@@ -26,12 +26,12 @@ $nome = addslashes($_POST['name']);
 $email = addslashes($_POST['email']);
 $mensagem = addslashes($_POST['mesage']);
 
-$to = "contato@arbyconstrutora.kinghost.net";
+$to = "contato@arbyconstrutora.com.br";
 $subject = "Email enviado do site";
 $body = "Nome: ".$nome. "\r\n".
         "Email: ".$email. "\r\n".
         "Mensagem: ".$mensagem;
-$header = "From:arbyconstrutora@arbyconstrutora.kinghost.net"."\r\n".
+$header = "From:arbyconstrutora@arbyconstrutora.com.br"."\r\n".
             "Repley-To:".$email."\e\n".
             "X=Mailer:PHP/".phpversion();
 
