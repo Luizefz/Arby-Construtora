@@ -25,8 +25,9 @@
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://arbyconstrutora.com.br/">
     <meta property="og:title" content="Arby Construtora e Incorporadora">
-    <meta property="og:description" content="A ARBY Construtora e Incorporadora está a mais de 2 anos no mercado criando e realizando os mais diversos sonhos no âmbito da construção civil.">
-    
+    <meta property="og:description"
+        content="A ARBY Construtora e Incorporadora está a mais de 2 anos no mercado criando e realizando os mais diversos sonhos no âmbito da construção civil.">
+
     <title>Arby | Construtora e Incorporadora</title>
 </head>
 
@@ -37,15 +38,15 @@
     <nav id="navbar">
 
         <ul class="nav-links">
-            <li><a id="remove" href="#secHome">Home</a></li>
-            <li><a id="remove" href="#secQuemSomos">Quem somos?</a></li>
+            <li><a class="nav-click" href="#secHome">Home</a></li>
+            <li><a class="nav-click" href="#secQuemSomos">Quem somos?</a></li>
         </ul>
 
         <img src="./assets/headerLine.png" class="cabecalho-line" />
 
         <ul class="nav-links">
-            <li><a id="remove" href="#secProjetos">Projetos</a></li>
-            <li><a id="remove" href="#secCliente">Nossos clientes</a></li>
+            <li><a class="nav-click" href="#secProjetos">Projetos</a></li>
+            <li><a class="nav-click" href="#secCliente">Nossos clientes</a></li>
         </ul>
 
     </nav>
@@ -83,8 +84,8 @@
         <img src="./assets/Residencial-Green3.png" class="home-Image">
         <img src="./assets/Residencial-Green3-1.png" class="home-Image02">
         <h1 class="home-text hidden">Compromisso com <br>a sua qualidade de vida.</h1>
-        <div class="home-ret02"></div>
-        <div class="home-ret03"></div>
+        <!-- <div class="home-ret02"></div>
+        <div class="home-ret03"></div> -->
         <a href="#secQuemSomos"><img src="./assets/scroll-down.gif" class="home-Scroll"></a>
 
 
@@ -125,7 +126,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide carosel-padding">
 
-                    <a href="greencost" target="_blank" style="text-decoration: none">
+                        <a href="greencost" target="_blank" style="text-decoration: none">
                             <div class="carosel-images d-flex align-items-center"
                                 style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Green-Coast.png); background-size: cover; background-position: center bottom;">
 
@@ -138,8 +139,8 @@
                     </li>
 
                     <li class="splide__slide carosel-padding">
-                        
-                    <a href="chicago" target="_blank" style="text-decoration: none">
+
+                        <a href="chicago" target="_blank" style="text-decoration: none">
                             <div class="carosel-images d-flex align-items-center"
                                 style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/Interior-Chicago.png); background-size: cover; background-position: center bottom;">
 
@@ -176,23 +177,35 @@
                 <ul class="splide__list">
                     <li class="splide__slide carosel-padding02">
 
-                            <div class="carosel-images02 d-flex align-items-center">
+                        <div class="carosel-images02 d-flex align-items-center">
 
-                                <img class="carosel-images02" src="./assets/Comentarios.png">
+                            <img class="carosel-images02" src="./assets/Comentarios.png">
 
-                            </div>
+                        </div>
                     </li>
 
                     <li class="splide__slide carosel-padding">
-                            <div class="carosel-images02">
+                        <div class="carosel-images02">
 
-                                <img class="carosel-images02" src="./assets/Comentarios02.png">
+                            <img class="carosel-images02" src="./assets/Comentarios02.png">
 
-                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
+
+    </section>
+
+    <section id="secQuemSomos">
+
+        <ul id="text-with">
+            <h1 class="principal-text">Qualidade está no nosso sobrenome!</h1>
+            <p class="secundario-text">Trabalhamos com as melhores marcas e produtos disponíveis no mercado, garantindo
+                sua despreocupação com possiveis eventos indesejados.</p>
+        </ul>
+
+        <img src="./assets/Mosaico-Marcas.png" class="cliente-imagem">
 
     </section>
 
@@ -205,15 +218,15 @@
             <p class="secundario-text">Envie-nos uma mensagem.</p>
 
             <form class="form" method="POST" action="email.php">
-                <input class="field" name="name" placeholder="Nome"  required>
-                <input class="field" name="email" placeholder="Email"  required>
-                <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."  required></textarea>
+                <input class="field" name="name" placeholder="Nome" required>
+                <input class="field" name="email" placeholder="Email" required>
+                <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui." required></textarea>
                 <input class="button" style="width: 200px; align-self: center;" type="submit" value="Enviar">
             </form>
         </ul>
 
         <img src="./assets/Mail-sent.png" class="fale-conosco-image">
-    
+
     </section>
 </body>
 
@@ -230,7 +243,7 @@
             <div class="footer-locus">
                 <img src="./assets/map.svg" class="footer-icon">
                 <div>
-                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Rua Dom
+                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Rua Dom
                         Luiz,
                         235<br>
                         Vila Real<br>
@@ -243,7 +256,7 @@
                 <img src="./assets/phone.svg" class="footer-icon">
                 <div>
 
-                    <p class="secundario-text" style="color: #c4c4c4; font-size: 18px; white-space: nowrap;">Telefone
+                    <p class="secundario-text" style="color: #FFFFFF; font-size: 18px; white-space: nowrap;">Telefone
                         para
                         contato<br>
                         <a href="tel:+55-47-99662-2236" id="remove" style="color: #FFFFFF; font-size: 18px">(47) 9
@@ -331,14 +344,14 @@
 
     $(window).on("load", function () {
 
-        $('.home-ret02').animate({ height: '170', opacity: '0.8'}, 1500);
-        $('.home-ret03').animate({ height: '70', width: '70', opacity: '0.8'}, 1000);
+        $('.home-ret02').animate({ height: '170', opacity: '0.8' }, 1500);
+        $('.home-ret03').animate({ height: '70', width: '70', opacity: '0.8' }, 1000);
         $('.home-Image02').animate({ opacity: 1 }, 1500);
         $('.whats-chat').animate({ opacity: 1 }, 2000);
         $('.home-text').fadeIn(2200)
     });
 
-    $(window).location.href='#secQuemSomos', function () {
+    $(window).location.href = '#secQuemSomos', function () {
         $('.principal-text').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
     }
 </script>
