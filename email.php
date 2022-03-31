@@ -31,7 +31,7 @@ $subject = "Email enviado do site";
 $body = "Nome: ".$nome. "\r\n".
         "Email: ".$email. "\r\n".
         "Mensagem: ".$mensagem;
-$header = "From:arbyconstrutora@arbyconstrutora.com.br"."\r\n".
+$header = "From:arby@arbyconstrutora.com.br"."\r\n".
             "Repley-To:".$email."\e\n".
             "X=Mailer:PHP/".phpversion();
 
