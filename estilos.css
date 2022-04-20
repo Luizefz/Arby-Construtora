@@ -337,6 +337,19 @@ body {
     transition: 0.3s ease 0s;
 }
 
+.carosel-badge {
+    position: fixed;
+    align-self: flex-start;
+    right: 0;
+    padding: 0.6em;
+    font-size: 14px;
+    color: rgb(224, 223, 224, 0.9);
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(10, 10, 10, 0.9);
+    z-index: 5;
+}
+
 .carosel-images {
     justify-self: center;
     width: 100%;
@@ -344,6 +357,7 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.3);
     border-radius: 50px 0px;
+    transform: scale(1);
     transition: 0.5s ease 0s;
 }
 
