@@ -292,6 +292,16 @@ body {
     overflow: hidden;
 }
 
+.quemsomos-ret02 {
+    position: absolute;
+    max-width: 37%;
+    align-self: center;
+    z-index: -2;
+    right: 0;
+    /* top: 15%; */
+    overflow: hidden;
+}
+
 #secProjetos {
     width: 100%;
     min-height: 100vh;
@@ -348,6 +358,18 @@ body {
     height: 500px;
 }
 
+.details-images-grencoast {
+    justify-self: center;
+    width: 60%;
+    max-width: 400px;
+    height: 450px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 3% 3% 3%;
+    align-self: center;
+    transition: 0.5s ease 0s;
+}
+
 .details-images {
     justify-self: center;
     width: 100%;
@@ -396,6 +418,7 @@ body {
 .cliente-imagem {
     min-width: 400px;
     width: 30%;
+    max-width: 700px;
     min-height: 400px;
     height: auto;
     margin-right: 3%;
@@ -422,11 +445,13 @@ body {
 .details-left {
     flex-direction: row-reverse;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .details-left-02 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 
 .details-right {
@@ -449,6 +474,7 @@ body {
     position: relative;
     min-width: 400px;
     width: 40%;
+    max-width: 800px;
     min-height: 300px;
     height: auto;
     right: 3%;
@@ -697,6 +723,9 @@ footer {
         right: 0px;
         overflow: hidden;
     }
+    .quemsomos-ret02 {
+        display: none;
+    }
 
     #secProjetos {
         width: 100%;
@@ -763,6 +792,15 @@ footer {
     }
 
     .details-images {
+        width: 95%;
+        min-width: 320px;
+        min-height: 00px;
+        height: auto;
+        margin: 0 3% 3% 3%;
+        z-index: -1;
+    }
+
+    .details-images-grencoast {
         width: 95%;
         min-width: 320px;
         min-height: 00px;
@@ -1130,6 +1168,15 @@ footer {
     }
 
     .details-images {
+        width: 95%;
+        min-width: 320px;
+        min-height: 00px;
+        height: auto;
+        margin: 0 3% 3% 3%;
+        z-index: -1;
+    }
+
+    .details-images-grencoast{
         width: 95%;
         min-width: 320px;
         min-height: 00px;
